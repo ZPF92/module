@@ -3,12 +3,12 @@
 	margin: 0;
 }
 @font-face {
-    font-family: 'SentyTEA-Platinum';
+    /*font-family: 'SentyTEA-Platinum';
     src: url('../fonts/SentyTEA-Platinum.eot'); /* IE9*/
-    src: url('../fonts/SentyTEA-Platinum.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/SentyTEA-Platinum.woff') format('woff'), /* chrome、firefox */
-    url('../fonts/SentyTEA-Platinum.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('../fonts/SentyTEA-Platinum.svg#SentyTEA-Platinum') format('svg'); /* iOS 4.1- */
+    /*src: url('../fonts/SentyTEA-Platinum.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    /*url('../fonts/SentyTEA-Platinum.woff') format('woff'), /* chrome、firefox */
+    /*url('../fonts/SentyTEA-Platinum.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    /*url('../fonts/SentyTEA-Platinum.svg#SentyTEA-Platinum') format('svg');  iOS 4.1- */
 }
 body{
     font-family: 'SentyTEA-Platinum';
