@@ -2,15 +2,16 @@
     "src"   : {
         "html"   : "./src/**/*.html",
         "js"     : "./src/js/**/*.js",
-        "css"   : "./src/css/**/*.css",
-        "img" : "./src/img/**/*.+(jpg|png|gif|svg)",
+        "css"    : "./src/css/**/*.css",
+        "ico"    : "./src/*.ico",
+        "img"    : "./src/img/**/*.+(jpg|png|gif|svg)",
         "fonts"  : "./src/fonts/**/*.+(eot|svg|ttf|woff|TTF|EOT|SVG|WOFF)" 
     },
     "build" : {
         "html"   : "./build/",
         "js"     : "./build/js/",
         "css"    : "./build/css/",
-        "img" : "./build/img/",
+        "img"    : "./build/img/",
         "fonts"  : "./build/fonts/" 
     }
 }

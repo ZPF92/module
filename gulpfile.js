@@ -136,6 +136,11 @@
 			.pipe(reload({stream: true}));
 	});
 
+	gulp.task(`ico`, () => {
+		return gulp.src(path.src.ico)
+			.pipe(gulp.dest(path.build.html));
+	});
+
 	gulp.task(`clean`, () => {
 
 	   	return gulp.src([path.build.html], {read: false})
@@ -143,8 +148,8 @@
 	        .pipe(clean());
 	});
 
-	gulp.task(`default`,[`clean`], function() {
-	    gulp.start(`browser-sync`, `lint`, `html`, `fonts`, `script`, `img`, `css`);
+	gulp.task(`default`,[`clean`], () => {
+	    gulp.start(`browser-sync`, `lint`, `html`, `fonts`, `script`, `img`, `css`, `ico`);
 	    gulp.watch(path.src.html, [`html`]);
 	    gulp.watch(path.src.css, [`css`]);
 	    gulp.watch(path.src.images, [`img`]);
@@ -166,7 +171,7 @@
 
 				oLink.attr(`href`,href);
 
-			}else{
+			}else if(oLink.attr(`type`) === `text/javascript`){
 
 				let href = oLink.attr(`src`).replace(/\.\w+$/g,(str) => {
 					return `.min${str}`;
