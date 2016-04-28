@@ -18,7 +18,9 @@
 
 	let jshint = require(`gulp-jshint`);           
 
-	let uglify = require(`gulp-uglify`);            	
+	let uglify = require(`gulp-uglify`); 
+
+	let babel = require(`gulp-babel`);           	
 
 	let fontmin = require(`gulp-fontmin`);
 
@@ -73,6 +75,9 @@
 
 	gulp.task(`script`,() => {
 		return gulp.src(path.src.js)
+			.pipe(babel({
+				presets:[`es2015`]
+			}))
 			.pipe(uglify())
 			.pipe(rename({suffix: `.min`}))
 			.pipe(gulp.dest(path.build.js))

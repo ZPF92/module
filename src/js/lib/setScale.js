@@ -25,7 +25,6 @@
             }.bind(this),false);    
         },
         change:function(){
-            var this=this;
             top.addEventListener('orientationchange',function(){
                 var rotate=(top.orientation+90)/90%2;
                 if(!rotate){
